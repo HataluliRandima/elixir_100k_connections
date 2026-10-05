@@ -1,0 +1,2018 @@
+{
+  "status": "completed",
+  "config": {
+    "label": null,
+    "url": "ws://127.0.0.1:4000/socket/websocket",
+    "connections": 1000,
+    "ramp_up_s": 5.0,
+    "duration_s": 60.0,
+    "message_interval_ms": 30000,
+    "min_free_mb": 512,
+    "source_ips": [],
+    "message_rate": null,
+    "server_metrics": true,
+    "sample_interval_ms": 2000,
+    "connect_timeout_ms": 10000,
+    "connection_duration_s": null
+  },
+  "started_at": "2026-10-05T16:42:35.040560Z",
+  "summary": {
+    "server": {
+      "per_connection": {
+        "ports": 1.0,
+        "processes": 2.0,
+        "beam_process_memory_bytes": 35244,
+        "beam_memory_bytes": 39930,
+        "rss_bytes": 46830
+      },
+      "at_peak": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 2100,
+          "messages_sent": 2100,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 192856064,
+        "memory_total_bytes": 131176568,
+        "memory_processes_bytes": 69612880,
+        "scheduler_utilization": 0.0013,
+        "cpu_time_ms": 25417,
+        "host_tcp": {
+          "alloc": 2082,
+          "inuse": 2038,
+          "mem": 436,
+          "orphan": 0,
+          "tw": 1
+        },
+        "memory_binary_bytes": 3481136,
+        "open_fds": 1020
+      },
+      "baseline": {
+        "counters": {
+          "active_connections": 0,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 0,
+          "messages_received": 0,
+          "messages_sent": 0,
+          "socket_errors": 0,
+          "sockets_accepted": 0
+        },
+        "port_count": 4,
+        "process_count": 467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 146026496,
+        "memory_total_bytes": 91246800,
+        "memory_processes_bytes": 34368544,
+        "scheduler_utilization": 0.0,
+        "cpu_time_ms": 12030,
+        "host_tcp": {
+          "alloc": 82,
+          "inuse": 38,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 1154080,
+        "open_fds": 20
+      },
+      "after_teardown": {
+        "counters": {
+          "active_connections": 0,
+          "disconnects": 1000,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 2100,
+          "messages_sent": 2100,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 4,
+        "process_count": 467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 195108864,
+        "memory_total_bytes": 95679736,
+        "memory_processes_bytes": 38372840,
+        "scheduler_utilization": 0.0199,
+        "cpu_time_ms": 25583,
+        "host_tcp": {
+          "alloc": 82,
+          "inuse": 38,
+          "mem": 948,
+          "orphan": 0,
+          "tw": 1001
+        },
+        "memory_binary_bytes": 1343480,
+        "open_fds": 20
+      },
+      "hold_cpu_percent_of_one_core": 15.3,
+      "max_run_queue": 1,
+      "max_scheduler_utilization": 0.0203
+    },
+    "errors": {},
+    "successfully_connected": 1000,
+    "target_connections": 1000,
+    "failed_connections": 0,
+    "peak_open_connections": 1000,
+    "open_at_end_of_hold": 1000,
+    "disconnected_unexpectedly": 0,
+    "closed_cleanly": 1000,
+    "messages_sent": 2100,
+    "messages_received": 2100,
+    "message_timeouts": 0,
+    "connect_latency": {
+      "count": 1000,
+      "p50_ms": 4.001,
+      "p90_ms": 5.911,
+      "p99_ms": 21.019,
+      "max_ms": 54.046,
+      "mean_ms": 4.332,
+      "p999_ms": 54.046
+    },
+    "message_rtt": {
+      "count": 2100,
+      "p50_ms": 1.436,
+      "p90_ms": 1.925,
+      "p99_ms": 2.456,
+      "max_ms": 3.3,
+      "mean_ms": 1.363,
+      "p999_ms": 2.986
+    },
+    "loadgen": {
+      "per_connection": {
+        "processes": 1.0,
+        "beam_process_memory_bytes": 24251,
+        "beam_memory_bytes": 2654116,
+        "rss_bytes": 42676
+      },
+      "at_peak": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 182939648,
+        "memory_total_bytes": 2742281528,
+        "memory_processes_bytes": 55563208
+      },
+      "baseline": {
+        "port_count": 4,
+        "process_count": 103,
+        "rss_bytes": 140263424,
+        "memory_total_bytes": 88165816,
+        "memory_processes_bytes": 31312352
+      }
+    },
+    "forced_shutdowns": 0,
+    "teardown_ms": 107,
+    "attempted": 1000,
+    "ramp_up_ms": 5004,
+    "test_duration_ms": 66142
+  },
+  "abort_reason": null,
+  "samples": [
+    {
+      "server": {
+        "counters": {
+          "active_connections": 0,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 0,
+          "messages_received": 0,
+          "messages_sent": 0,
+          "socket_errors": 0,
+          "sockets_accepted": 0
+        },
+        "port_count": 14,
+        "process_count": 477,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 146026496,
+        "memory_total_bytes": 91350768,
+        "memory_processes_bytes": 34447704,
+        "scheduler_utilization": 0.0,
+        "cpu_time_ms": 12040,
+        "host_tcp": {
+          "alloc": 102,
+          "inuse": 58,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 1158024,
+        "open_fds": 30
+      },
+      "phase": "ramp_up",
+      "client": {
+        "closed": 0,
+        "connected": 0,
+        "open": 0,
+        "started": 10,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 0,
+        "messages_received": 0,
+        "message_timeouts": 0,
+        "attempted": 10
+      },
+      "loadgen": {
+        "port_count": 5,
+        "process_count": 113,
+        "rss_bytes": 140525568,
+        "memory_total_bytes": 88337168,
+        "memory_processes_bytes": 31578672
+      },
+      "host_mem_available_bytes": 1961840640,
+      "t_ms": 47,
+      "server_cpu_percent_of_one_core": null
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 410,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 410,
+          "messages_received": 18,
+          "messages_sent": 18,
+          "socket_errors": 0,
+          "sockets_accepted": 411
+        },
+        "port_count": 415,
+        "process_count": 1288,
+        "process_limit": 2097152,
+        "run_queue": 1,
+        "rss_bytes": 153497600,
+        "memory_total_bytes": 105099824,
+        "memory_processes_bytes": 46699760,
+        "scheduler_utilization": 0.0203,
+        "cpu_time_ms": 14122,
+        "host_tcp": {
+          "alloc": 904,
+          "inuse": 860,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 1748392,
+        "open_fds": 431
+      },
+      "phase": "ramp_up",
+      "client": {
+        "closed": 0,
+        "connected": 409,
+        "open": 409,
+        "started": 411,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 18,
+        "messages_received": 18,
+        "message_timeouts": 0,
+        "attempted": 411
+      },
+      "loadgen": {
+        "port_count": 413,
+        "process_count": 514,
+        "rss_bytes": 149315584,
+        "memory_total_bytes": 1171494536,
+        "memory_processes_bytes": 39240144
+      },
+      "host_mem_available_bytes": 1932836864,
+      "t_ms": 2053,
+      "server_cpu_percent_of_one_core": 103.8
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 812,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 812,
+          "messages_received": 75,
+          "messages_sent": 75,
+          "socket_errors": 0,
+          "sockets_accepted": 812
+        },
+        "port_count": 816,
+        "process_count": 2091,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 166211584,
+        "memory_total_bytes": 118910736,
+        "memory_processes_bytes": 58844000,
+        "scheduler_utilization": 0.0198,
+        "cpu_time_ms": 16101,
+        "host_tcp": {
+          "alloc": 1706,
+          "inuse": 1662,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 2440240,
+        "open_fds": 832
+      },
+      "phase": "ramp_up",
+      "client": {
+        "closed": 0,
+        "connected": 810,
+        "open": 810,
+        "started": 812,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 75,
+        "messages_received": 75,
+        "message_timeouts": 0,
+        "attempted": 812
+      },
+      "loadgen": {
+        "port_count": 814,
+        "process_count": 915,
+        "rss_bytes": 159694848,
+        "memory_total_bytes": 2233300584,
+        "memory_processes_bytes": 46566288
+      },
+      "host_mem_available_bytes": 1909837824,
+      "t_ms": 4059,
+      "server_cpu_percent_of_one_core": 98.7
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 128,
+          "messages_sent": 128,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 173813760,
+        "memory_total_bytes": 125743120,
+        "memory_processes_bytes": 64896952,
+        "scheduler_utilization": 0.0144,
+        "cpu_time_ms": 17075,
+        "host_tcp": {
+          "alloc": 2082,
+          "inuse": 2038,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 2761264,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 128,
+        "messages_received": 128,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 165244928,
+        "memory_total_bytes": 2736524480,
+        "memory_processes_bytes": 50347496
+      },
+      "host_mem_available_bytes": 1894518784,
+      "t_ms": 6063,
+      "server_cpu_percent_of_one_core": 48.6
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 183,
+          "messages_sent": 183,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 174993408,
+        "memory_total_bytes": 126663528,
+        "memory_processes_bytes": 65795272,
+        "scheduler_utilization": 0.0011,
+        "cpu_time_ms": 17237,
+        "host_tcp": {
+          "alloc": 2082,
+          "inuse": 2038,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 2782880,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 183,
+        "messages_received": 183,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 165638144,
+        "memory_total_bytes": 2736948248,
+        "memory_processes_bytes": 50484648
+      },
+      "host_mem_available_bytes": 1895759872,
+      "t_ms": 8065,
+      "server_cpu_percent_of_one_core": 8.1
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 262,
+          "messages_sent": 262,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 176041984,
+        "memory_total_bytes": 127514288,
+        "memory_processes_bytes": 66618248,
+        "scheduler_utilization": 0.0011,
+        "cpu_time_ms": 17489,
+        "host_tcp": {
+          "alloc": 2082,
+          "inuse": 2038,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 2810432,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 261,
+        "messages_received": 261,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 166817792,
+        "memory_total_bytes": 2737199344,
+        "memory_processes_bytes": 50896808
+      },
+      "host_mem_available_bytes": 1893466112,
+      "t_ms": 10075,
+      "server_cpu_percent_of_one_core": 12.5
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 330,
+          "messages_sent": 330,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 177745920,
+        "memory_total_bytes": 128460888,
+        "memory_processes_bytes": 67473720,
+        "scheduler_utilization": 0.0011,
+        "cpu_time_ms": 17738,
+        "host_tcp": {
+          "alloc": 2082,
+          "inuse": 2038,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 2901496,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 329,
+        "messages_received": 329,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 167866368,
+        "memory_total_bytes": 2737587760,
+        "memory_processes_bytes": 51292256
+      },
+      "host_mem_available_bytes": 1891860480,
+      "t_ms": 12077,
+      "server_cpu_percent_of_one_core": 12.4
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 393,
+          "messages_sent": 393,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 179318784,
+        "memory_total_bytes": 129130472,
+        "memory_processes_bytes": 68153032,
+        "scheduler_utilization": 0.001,
+        "cpu_time_ms": 17907,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2038,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 2891864,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 393,
+        "messages_received": 393,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 168783872,
+        "memory_total_bytes": 2738031688,
+        "memory_processes_bytes": 51603120
+      },
+      "host_mem_available_bytes": 1877323776,
+      "t_ms": 14085,
+      "server_cpu_percent_of_one_core": 8.4
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 444,
+          "messages_sent": 444,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 180891648,
+        "memory_total_bytes": 128727952,
+        "memory_processes_bytes": 67763752,
+        "scheduler_utilization": 0.0009,
+        "cpu_time_ms": 18219,
+        "host_tcp": {
+          "alloc": 2082,
+          "inuse": 2038,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 2878760,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 444,
+        "messages_received": 444,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 169439232,
+        "memory_total_bytes": 2738283536,
+        "memory_processes_bytes": 51853920
+      },
+      "host_mem_available_bytes": 1872474112,
+      "t_ms": 16093,
+      "server_cpu_percent_of_one_core": 15.5
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 504,
+          "messages_sent": 504,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 182202368,
+        "memory_total_bytes": 128574320,
+        "memory_processes_bytes": 67585032,
+        "scheduler_utilization": 0.0011,
+        "cpu_time_ms": 18752,
+        "host_tcp": {
+          "alloc": 2082,
+          "inuse": 2038,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 2904904,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 504,
+        "messages_received": 504,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 170356736,
+        "memory_total_bytes": 2738371272,
+        "memory_processes_bytes": 52277704
+      },
+      "host_mem_available_bytes": 1872834560,
+      "t_ms": 18096,
+      "server_cpu_percent_of_one_core": 26.6
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 572,
+          "messages_sent": 572,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 183513088,
+        "memory_total_bytes": 127486104,
+        "memory_processes_bytes": 66404640,
+        "scheduler_utilization": 0.0015,
+        "cpu_time_ms": 19383,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 2998976,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 572,
+        "messages_received": 572,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 171274240,
+        "memory_total_bytes": 2738711504,
+        "memory_processes_bytes": 52410520
+      },
+      "host_mem_available_bytes": 1868812288,
+      "t_ms": 20102,
+      "server_cpu_percent_of_one_core": 31.5
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 649,
+          "messages_sent": 649,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 185610240,
+        "memory_total_bytes": 128618880,
+        "memory_processes_bytes": 67546744,
+        "scheduler_utilization": 0.0011,
+        "cpu_time_ms": 19763,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 23
+        },
+        "memory_binary_bytes": 2990320,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 649,
+        "messages_received": 649,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 172322816,
+        "memory_total_bytes": 2738936104,
+        "memory_processes_bytes": 52816024
+      },
+      "host_mem_available_bytes": 1863553024,
+      "t_ms": 22104,
+      "server_cpu_percent_of_one_core": 19.0
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 724,
+          "messages_sent": 724,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 186527744,
+        "memory_total_bytes": 128887832,
+        "memory_processes_bytes": 67821000,
+        "scheduler_utilization": 0.0013,
+        "cpu_time_ms": 20091,
+        "host_tcp": {
+          "alloc": 2084,
+          "inuse": 2040,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 23
+        },
+        "memory_binary_bytes": 2984992,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 724,
+        "messages_received": 724,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 173240320,
+        "memory_total_bytes": 2739423080,
+        "memory_processes_bytes": 53297088
+      },
+      "host_mem_available_bytes": 1857126400,
+      "t_ms": 24107,
+      "server_cpu_percent_of_one_core": 16.4
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 797,
+          "messages_sent": 797,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 187576320,
+        "memory_total_bytes": 128968280,
+        "memory_processes_bytes": 67877496,
+        "scheduler_utilization": 0.0011,
+        "cpu_time_ms": 20462,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 3008960,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 797,
+        "messages_received": 797,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 174288896,
+        "memory_total_bytes": 2739778808,
+        "memory_processes_bytes": 53635760
+      },
+      "host_mem_available_bytes": 1854316544,
+      "t_ms": 26115,
+      "server_cpu_percent_of_one_core": 18.5
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 864,
+          "messages_sent": 864,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 188493824,
+        "memory_total_bytes": 129441080,
+        "memory_processes_bytes": 68326352,
+        "scheduler_utilization": 0.001,
+        "cpu_time_ms": 20802,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 3032944,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 864,
+        "messages_received": 864,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 174944256,
+        "memory_total_bytes": 2740100888,
+        "memory_processes_bytes": 53964072
+      },
+      "host_mem_available_bytes": 1850548224,
+      "t_ms": 28117,
+      "server_cpu_percent_of_one_core": 17.0
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 932,
+          "messages_sent": 932,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 189411328,
+        "memory_total_bytes": 129792744,
+        "memory_processes_bytes": 68652928,
+        "scheduler_utilization": 0.0012,
+        "cpu_time_ms": 21143,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 3058016,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 932,
+        "messages_received": 932,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 175861760,
+        "memory_total_bytes": 2740452968,
+        "memory_processes_bytes": 54295848
+      },
+      "host_mem_available_bytes": 1855430656,
+      "t_ms": 30121,
+      "server_cpu_percent_of_one_core": 17.0
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 993,
+          "messages_sent": 993,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 190066688,
+        "memory_total_bytes": 130391272,
+        "memory_processes_bytes": 69159024,
+        "scheduler_utilization": 0.0009,
+        "cpu_time_ms": 21433,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 3150208,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 993,
+        "messages_received": 993,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 176648192,
+        "memory_total_bytes": 2740662896,
+        "memory_processes_bytes": 54496296
+      },
+      "host_mem_available_bytes": 1849118720,
+      "t_ms": 32128,
+      "server_cpu_percent_of_one_core": 14.4
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1075,
+          "messages_sent": 1075,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 190722048,
+        "memory_total_bytes": 130507392,
+        "memory_processes_bytes": 69275816,
+        "scheduler_utilization": 0.0011,
+        "cpu_time_ms": 21717,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 3149416,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1075,
+        "messages_received": 1074,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 177303552,
+        "memory_total_bytes": 2740758976,
+        "memory_processes_bytes": 54554896
+      },
+      "host_mem_available_bytes": 1852141568,
+      "t_ms": 34128,
+      "server_cpu_percent_of_one_core": 14.2
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1133,
+          "messages_sent": 1133,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 190722048,
+        "memory_total_bytes": 130046920,
+        "memory_processes_bytes": 68821960,
+        "scheduler_utilization": 0.0007,
+        "cpu_time_ms": 21951,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 3142840,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1133,
+        "messages_received": 1133,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 177696768,
+        "memory_total_bytes": 2740928832,
+        "memory_processes_bytes": 54683864
+      },
+      "host_mem_available_bytes": 1859559424,
+      "t_ms": 36130,
+      "server_cpu_percent_of_one_core": 11.7
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1189,
+          "messages_sent": 1189,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 190984192,
+        "memory_total_bytes": 130116600,
+        "memory_processes_bytes": 68866056,
+        "scheduler_utilization": 0.001,
+        "cpu_time_ms": 22227,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 3168584,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1189,
+        "messages_received": 1188,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 177827840,
+        "memory_total_bytes": 2740948464,
+        "memory_processes_bytes": 54564696
+      },
+      "host_mem_available_bytes": 1864568832,
+      "t_ms": 38135,
+      "server_cpu_percent_of_one_core": 13.8
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1263,
+          "messages_sent": 1263,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 191115264,
+        "memory_total_bytes": 130396304,
+        "memory_processes_bytes": 69045488,
+        "scheduler_utilization": 0.0009,
+        "cpu_time_ms": 22522,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 3268872,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1263,
+        "messages_received": 1263,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 178352128,
+        "memory_total_bytes": 2741032648,
+        "memory_processes_bytes": 54684272
+      },
+      "host_mem_available_bytes": 1862201344,
+      "t_ms": 40140,
+      "server_cpu_percent_of_one_core": 14.7
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1330,
+          "messages_sent": 1330,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 191246336,
+        "memory_total_bytes": 130525808,
+        "memory_processes_bytes": 69143200,
+        "scheduler_utilization": 0.0009,
+        "cpu_time_ms": 22782,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 3300784,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1330,
+        "messages_received": 1330,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 178745344,
+        "memory_total_bytes": 2741075984,
+        "memory_processes_bytes": 54690816
+      },
+      "host_mem_available_bytes": 1865961472,
+      "t_ms": 42144,
+      "server_cpu_percent_of_one_core": 13.0
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1394,
+          "messages_sent": 1394,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 191414272,
+        "memory_total_bytes": 130220912,
+        "memory_processes_bytes": 68870464,
+        "scheduler_utilization": 0.0009,
+        "cpu_time_ms": 23046,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 24
+        },
+        "memory_binary_bytes": 3268528,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1394,
+        "messages_received": 1393,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 179007488,
+        "memory_total_bytes": 2741115728,
+        "memory_processes_bytes": 54690672
+      },
+      "host_mem_available_bytes": 1862082560,
+      "t_ms": 44148,
+      "server_cpu_percent_of_one_core": 13.2
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1444,
+          "messages_sent": 1444,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 191414272,
+        "memory_total_bytes": 129826752,
+        "memory_processes_bytes": 68464864,
+        "scheduler_utilization": 0.0006,
+        "cpu_time_ms": 23208,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 180,
+          "orphan": 0,
+          "tw": 3
+        },
+        "memory_binary_bytes": 3280216,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1444,
+        "messages_received": 1444,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 179269632,
+        "memory_total_bytes": 2741161072,
+        "memory_processes_bytes": 54591728
+      },
+      "host_mem_available_bytes": 1860734976,
+      "t_ms": 46150,
+      "server_cpu_percent_of_one_core": 8.1
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1506,
+          "messages_sent": 1506,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 191414272,
+        "memory_total_bytes": 130051192,
+        "memory_processes_bytes": 68660952,
+        "scheduler_utilization": 0.0005,
+        "cpu_time_ms": 23431,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 436,
+          "orphan": 0,
+          "tw": 2
+        },
+        "memory_binary_bytes": 3308352,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1506,
+        "messages_received": 1506,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 179531776,
+        "memory_total_bytes": 2741202816,
+        "memory_processes_bytes": 54709640
+      },
+      "host_mem_available_bytes": 1859715072,
+      "t_ms": 48153,
+      "server_cpu_percent_of_one_core": 11.1
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1573,
+          "messages_sent": 1573,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 191676416,
+        "memory_total_bytes": 129986144,
+        "memory_processes_bytes": 68564920,
+        "scheduler_utilization": 0.001,
+        "cpu_time_ms": 23669,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 436,
+          "orphan": 0,
+          "tw": 2
+        },
+        "memory_binary_bytes": 3339544,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1573,
+        "messages_received": 1573,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 179793920,
+        "memory_total_bytes": 2741214528,
+        "memory_processes_bytes": 54595568
+      },
+      "host_mem_available_bytes": 1856897024,
+      "t_ms": 50155,
+      "server_cpu_percent_of_one_core": 11.9
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1650,
+          "messages_sent": 1650,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 191676416,
+        "memory_total_bytes": 130253864,
+        "memory_processes_bytes": 68786472,
+        "scheduler_utilization": 0.0009,
+        "cpu_time_ms": 23820,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 436,
+          "orphan": 0,
+          "tw": 2
+        },
+        "memory_binary_bytes": 3385552,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1650,
+        "messages_received": 1650,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 180056064,
+        "memory_total_bytes": 2741340464,
+        "memory_processes_bytes": 54658296
+      },
+      "host_mem_available_bytes": 1862246400,
+      "t_ms": 52158,
+      "server_cpu_percent_of_one_core": 7.5
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1727,
+          "messages_sent": 1727,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 191807488,
+        "memory_total_bytes": 130427736,
+        "memory_processes_bytes": 68923584,
+        "scheduler_utilization": 0.0006,
+        "cpu_time_ms": 24040,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 436,
+          "orphan": 0,
+          "tw": 2
+        },
+        "memory_binary_bytes": 3422152,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1726,
+        "messages_received": 1726,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 180580352,
+        "memory_total_bytes": 2741365048,
+        "memory_processes_bytes": 54535416
+      },
+      "host_mem_available_bytes": 1849962496,
+      "t_ms": 54166,
+      "server_cpu_percent_of_one_core": 11.0
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1798,
+          "messages_sent": 1798,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 192069632,
+        "memory_total_bytes": 130134424,
+        "memory_processes_bytes": 68614320,
+        "scheduler_utilization": 0.0009,
+        "cpu_time_ms": 24356,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 436,
+          "orphan": 0,
+          "tw": 2
+        },
+        "memory_binary_bytes": 3437992,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1798,
+        "messages_received": 1798,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 180842496,
+        "memory_total_bytes": 2741278912,
+        "memory_processes_bytes": 54583400
+      },
+      "host_mem_available_bytes": 1850167296,
+      "t_ms": 56166,
+      "server_cpu_percent_of_one_core": 15.8
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1866,
+          "messages_sent": 1866,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 192200704,
+        "memory_total_bytes": 130395336,
+        "memory_processes_bytes": 68844608,
+        "scheduler_utilization": 0.0008,
+        "cpu_time_ms": 24615,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 436,
+          "orphan": 0,
+          "tw": 1
+        },
+        "memory_binary_bytes": 3468784,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1866,
+        "messages_received": 1866,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 181104640,
+        "memory_total_bytes": 2741376752,
+        "memory_processes_bytes": 54561176
+      },
+      "host_mem_available_bytes": 1845485568,
+      "t_ms": 58169,
+      "server_cpu_percent_of_one_core": 12.9
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1935,
+          "messages_sent": 1935,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 192331776,
+        "memory_total_bytes": 130483152,
+        "memory_processes_bytes": 68901776,
+        "scheduler_utilization": 0.0012,
+        "cpu_time_ms": 24839,
+        "host_tcp": {
+          "alloc": 2083,
+          "inuse": 2039,
+          "mem": 436,
+          "orphan": 0,
+          "tw": 1
+        },
+        "memory_binary_bytes": 3499344,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1935,
+        "messages_received": 1935,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 181235712,
+        "memory_total_bytes": 2741302872,
+        "memory_processes_bytes": 54591024
+      },
+      "host_mem_available_bytes": 1845014528,
+      "t_ms": 60175,
+      "server_cpu_percent_of_one_core": 11.2
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 1995,
+          "messages_sent": 1995,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 192331776,
+        "memory_total_bytes": 131061488,
+        "memory_processes_bytes": 69403856,
+        "scheduler_utilization": 0.0007,
+        "cpu_time_ms": 25025,
+        "host_tcp": {
+          "alloc": 2082,
+          "inuse": 2038,
+          "mem": 436,
+          "orphan": 0,
+          "tw": 1
+        },
+        "memory_binary_bytes": 3575536,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 1995,
+        "messages_received": 1995,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 181628928,
+        "memory_total_bytes": 2741520824,
+        "memory_processes_bytes": 54767528
+      },
+      "host_mem_available_bytes": 1843523584,
+      "t_ms": 62178,
+      "server_cpu_percent_of_one_core": 9.3
+    },
+    {
+      "server": {
+        "counters": {
+          "active_connections": 1000,
+          "disconnects": 0,
+          "join_errors": 0,
+          "joins": 1000,
+          "messages_received": 2076,
+          "messages_sent": 2076,
+          "socket_errors": 0,
+          "sockets_accepted": 1000
+        },
+        "port_count": 1004,
+        "process_count": 2467,
+        "process_limit": 2097152,
+        "run_queue": 0,
+        "rss_bytes": 192593920,
+        "memory_total_bytes": 131488968,
+        "memory_processes_bytes": 69883712,
+        "scheduler_utilization": 0.0007,
+        "cpu_time_ms": 25304,
+        "host_tcp": {
+          "alloc": 2082,
+          "inuse": 2038,
+          "mem": 436,
+          "orphan": 0,
+          "tw": 1
+        },
+        "memory_binary_bytes": 3523056,
+        "open_fds": 1020
+      },
+      "phase": "hold",
+      "client": {
+        "closed": 0,
+        "connected": 1000,
+        "open": 1000,
+        "started": 1000,
+        "disconnected": 0,
+        "failed": 0,
+        "messages_sent": 2076,
+        "messages_received": 2076,
+        "message_timeouts": 0,
+        "attempted": 1000
+      },
+      "loadgen": {
+        "port_count": 1004,
+        "process_count": 1103,
+        "rss_bytes": 182415360,
+        "memory_total_bytes": 2742071832,
+        "memory_processes_bytes": 55263144
+      },
+      "host_mem_available_bytes": 1843105792,
+      "t_ms": 64179,
+      "server_cpu_percent_of_one_core": 13.9
+    }
+  ],
+  "environment": {
+    "os": "Ubuntu 24.04.3 LTS",
+    "otp_release": "26",
+    "kernel": "6.6.87.2-microsoft-standard-WSL2",
+    "elixir": "1.17.0",
+    "erts": "14.1.1",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i5-1245U",
+    "limits": {
+      "fs_nr_open": 1048576,
+      "ip_local_port_range": "32768 60999",
+      "loadgen_port_limit": 1048576,
+      "loadgen_process_limit": 2097152,
+      "open_files_soft": 1048576,
+      "somaxconn": 4096,
+      "tcp_max_syn_backlog": 512
+    },
+    "logical_cpus": 12,
+    "mem_total_bytes": 8163373056
+  },
+  "finished_at": "2026-10-05T16:43:41.510010Z",
+  "schema_version": 1
+}
