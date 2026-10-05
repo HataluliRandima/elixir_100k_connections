@@ -1,0 +1,22 @@
+# Build artifacts and dependencies (each Mix project also has its own .gitignore)
+_build/
+deps/
+cover/
+doc/
+*.ez
+erl_crash.dump
+
+# Editor / OS noise
+.elixir_ls/
+.lexical/
+.vscode/
+.idea/
+.DS_Store
+
+# Benchmark console logs contain absolute local paths; the JSON results are
+# the record and are kept.
+results/runs/*.log
+
+# Never commit secrets
+.env
+*.secret
